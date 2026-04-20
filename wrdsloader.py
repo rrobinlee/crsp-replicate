@@ -49,7 +49,7 @@ class WRDSloader:
             self._db = None
             logger.info("WRDS connection closed")
 
-    def __enter__(self) -> "WRDSDownloader":
+    def __enter__(self) -> "WRDSloader":
         return self
         
     def __exit__(self, *_) -> None:
